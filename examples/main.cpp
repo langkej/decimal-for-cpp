@@ -42,4 +42,26 @@ int main() {
     std::cout << "Hash of a: " << std::hash<dec64>{}(a) << std::endl;
 
     return 0;
+
 }
+
+/*
+
+Output:
+
+a: 123
+b: 45.67
+c: 789.01
+d: 345.67
+a + b: 168.67
+a - c: -666.01
+b * c: 36034.0867
+c / b: 17.2763301948
+a == b: 0
+a < c: 1
+b > c: 0
+c rescaled to 3 decimal places: 789.010
+c rescaled to 1 decimal places: 789.0
+Hash of a: 2654443756
+
+*/
