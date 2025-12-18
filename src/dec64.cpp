@@ -1,9 +1,4 @@
 #include "dec64.hpp"
-#include <cstdio>
-#include <cmath>
-#include <stdexcept>
-#include <algorithm>
-#include <limits>
 
 namespace {
 
@@ -251,4 +246,5 @@ size_t dec64::hash() const {
     size_t h1 = std::hash<int64_t>{}(temp_coeff);
     size_t h2 = std::hash<int16_t>{}(temp_exp);
     return h1 ^ (h2 + 0x9e3779b9 + (h1 << 6) + (h1 >> 2));
+
 }
