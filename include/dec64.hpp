@@ -6,6 +6,11 @@
 #include <string_view>
 #include <type_traits>
 #include <iostream>
+#include <cstdio>
+#include <cmath>
+#include <stdexcept>
+#include <algorithm>
+#include <limits>
 
 /**
  * @class dec64
@@ -178,5 +183,6 @@ namespace std {
     };
 
 }
+
 
 #endif // DEC64_DEC64_HPP
